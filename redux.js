@@ -1,5 +1,5 @@
 const INITIAL_STATE = { face: "ఠ_ఠ" };
-const moodChanger = (state = INITIAL_STATE, action) => {
+const reduxMoodChanger = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case "HAPPY":
       return { ...state, face: "(◕‿◕)" };
@@ -16,4 +16,4 @@ const moodChanger = (state = INITIAL_STATE, action) => {
       return state;
   }
 };
-const store = Redux.createStore(moodChanger);
+const store = Redux.createStore(reduxMoodChanger);
